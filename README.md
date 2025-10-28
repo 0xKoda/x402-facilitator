@@ -8,12 +8,18 @@ This facilitator provides payment verification, settlement, and service discover
 
 ## Features
 
+- **High Performance**: Achieved sub-100ms latency with Edge deployment
 - Complete x402 protocol implementation (`verify`, `settle`, `discovery`)
 - Base mainnet and Base Sepolia testnet support
 - EIP-712 signature verification
 - Replay attack prevention via nonce tracking
 - Automatic seller registration in discovery catalog
-- Edge deployment with sub-100ms global latency
+
+### Performance Benchmark
+
+<p align="center">
+  <img src="bench.png" width="350" alt="x402 Facilitator Performance Benchmark">
+</p>
 
 ## Prerequisites
 
