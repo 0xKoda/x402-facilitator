@@ -1,0 +1,29 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "x402-facilitator",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-10-24",
+	"observability": {
+		"enabled": true
+	},
+	// create your kv binding and add it here
+	"kv_namespaces": [
+		{
+			"binding": "NONCES",
+			"id": "",
+			"remote": true
+		}
+	],
+	"vars": {
+		// Base Mainnet RPC (you can use public or get a free one from Alchemy/QuickNode)
+		"RPC_URL_BASE": "https://mainnet.base.org",
+		
+		// Base Sepolia Testnet RPC (public endpoint)
+		"RPC_URL_BASE_SEPOLIA": "https://sepolia.base.org"
+	  }
+	
+}
